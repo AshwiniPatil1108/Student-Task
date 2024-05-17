@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title> Student task by submit Event</title>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+			<link rel="stylesheet" href="./accets/css/style.css">
+		</head>
+		<body>
+			<div class="container mt-4">
+				<div class="row">
+					<div class="col-md-6 mb-4 mb-md-0">
+						<div class="card">
+							<div class="card-body">
+								<form id="stdForm">
+									<div class="form-group">
+										<label for="fname" class="sr-only">First Name</label>
+										<input 
+										type="text" 
+										id="fname" 
+										name="fname" 
+										placeholder="First Name" 
+										class="form-control" required>
+										
+									</div>
+									<div class="form-group">
+										<label for="lname" class="sr-only">Last Name</label>
+										<input 
+										type="text" 
+										id="lname" 
+										placeholder="Last Name" 
+										class="form-control" required>
+									</div>
+									<div class="form-group">
+										<label for="email" class="sr-only">Email</label>
+										<input 
+										type="text" 
+										id="email" 
+										placeholder="Email" 
+										class="form-control" required>
+									</div>
+									<div class="form-group">
+										<label for="contact" class="sr-only">Contact</label>
+										<input 
+										type="text" 
+										id="contact" 
+										placeholder="Contact" 
+										class="form-control" required>
+									</div>
+									<div>
+										<button type="submit" class="btn btn-outline-warning btn-block btn-sm">
+										Add Student
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6">
+						<table class="table table-bordered  table-hover table-active  text-white ">
+							<thead >
+								<tr class="bg-warning">
+									<td>Sr no</td>
+									<td>First Name</td>
+									<td>Last Name</td>
+									<td>Email</td>
+									<td>Contact</td>
+								</tr>
+							</thead>
+							<tbody id ="stdContainer">
+							<!-- 	<tr>
+									<td>Sr no</td>
+									<td>First Name</td>
+									<td>Last Name</td>
+									<td>Email</td>
+									<td>Contact</td>
+								</tr> -->
+							
+							</tbody>
+						</table>
+					
+					</div>
+				</div>
+			</div>
+			<script src="./accets/js/app.js"></script>
+		</body>
+	</html>
